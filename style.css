@@ -1,0 +1,51 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap');
+body {
+    background-color: #000000;
+    color: #FFFAE3;
+    font-family: 'Poppins', sans-serif;
+}
+
+.hidden {
+    opacity: 0;
+    filter: blur(5px);
+    transform: translateX(-100%, 0, 0);
+    transition: all 1.5s;
+}
+
+.show {
+    opacity: 1;
+    filter: blur(0);
+    transform: translateX(0);
+}
+
+#boxUIC, #boxCHEST {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+
+#description.hidden, #boxCTI.hidden, #boxUTI.hidden {
+    opacity: 0;
+    filter: blur(100px);
+    transition: all 2s;
+    transform: none;
+}
+
+#description.show, #boxCTI.hidden, #boxUTI.hidden {
+    opacity: 1;
+    filter: blur(0);
+    transform: none;
+}
+
+div {
+    margin-left: 20px;
+}
+
+img {
+    border: 5px solid #f2f0e6;
+}
+
+#boxWEL, #boxCHEST, #boxUIC {
+    padding-bottom: 800px;
+    box-sizing: border-box;
+}
